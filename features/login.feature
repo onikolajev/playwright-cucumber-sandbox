@@ -4,6 +4,17 @@ Feature: Login action
     I want to login into application
 
     Scenario: Login with valid credentials
-    Given I visit a login page
-    When I fill the login form with valid credentials
-    Then I should see the home page
+        Given I visit a login page
+        And I fill the login form with valid credentials
+        Then I should see the home page
+
+    Scenario Outline: Try to login with invalid credentials
+        Given I visit a login page
+        When I fill the login form with "<username>" and "<password>"
+        Then I wait for "<waitTime>" seconds
+
+        Examples:
+            | username | password | waitTime |
+            | fail-1   | fail-1   | 1     |
+            | fail-2   | fail-2   | 2     |
+            | fail-3   | fail-3   | 3     |
