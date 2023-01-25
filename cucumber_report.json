@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 530135540
+              "duration": 554822424
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 276499402
+              "duration": 311805462
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 128179522
+              "duration": 175631476
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12619383
+              "duration": 12602904
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1395457
+              "duration": 1469030
             }
           }
         ],
@@ -80,7 +80,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 336468665
+              "duration": 328701771
             }
           },
           {
@@ -93,33 +93,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 279541913
+              "duration": 319891046
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 13,
-            "name": "I fill the login form with \"fail-1\" and \"fail-1\"",
+            "name": "I fill the login form with \"locked_out_user\" and \"secret_sauce\"",
             "match": {
               "location": "step-definitions/login-step.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 123252040
+              "duration": 121404633
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "I wait for \"1\" seconds",
+            "name": "I see error message \"Epic sadface: Sorry, this user has been locked out.\"",
             "match": {
-              "location": "step-definitions/login-step.js:18"
+              "location": "step-definitions/login-step.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 2381386
+              "duration": 107031376
             }
           },
           {
@@ -127,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 629822
+              "duration": 748837
             }
           }
         ],
@@ -146,7 +146,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 377682448
+              "duration": 251968472
             }
           },
           {
@@ -159,33 +159,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 291333091
+              "duration": 304579900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 13,
-            "name": "I fill the login form with \"fail-2\" and \"fail-2\"",
+            "name": "I fill the login form with \"wrong_username\" and \"secret_sauce\"",
             "match": {
               "location": "step-definitions/login-step.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 78177425
+              "duration": 135175600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "I wait for \"2\" seconds",
+            "name": "I see error message \"Epic sadface: Username and password do not match any user in this service\"",
             "match": {
-              "location": "step-definitions/login-step.js:18"
+              "location": "step-definitions/login-step.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1897479
+              "duration": 96240882
             }
           },
           {
@@ -193,7 +193,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 550966
+              "duration": 636296
             }
           }
         ],
@@ -212,7 +212,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 240621113
+              "duration": 245238523
             }
           },
           {
@@ -225,33 +225,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 301063997
+              "duration": 284592495
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 13,
-            "name": "I fill the login form with \"fail-3\" and \"fail-3\"",
+            "name": "I fill the login form with \"standard_user\" and \"wrong_password\"",
             "match": {
               "location": "step-definitions/login-step.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 89259012
+              "duration": 121383751
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "I wait for \"3\" seconds",
+            "name": "I see error message \"Epic sadface: Username and password do not match any user in this service\"",
             "match": {
-              "location": "step-definitions/login-step.js:18"
+              "location": "step-definitions/login-step.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1723533
+              "duration": 100249535
             }
           },
           {
@@ -259,7 +259,271 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 542471
+              "duration": 521278
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;try-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Try to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 242338739
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions/login-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292572697
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill the login form with \"any_username\" and \"\"",
+            "match": {
+              "location": "step-definitions/login-step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132478279
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I see error message \"Epic sadface: Password is required\"",
+            "match": {
+              "location": "step-definitions/login-step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94377905
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 579159
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;try-to-login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Try to login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 247647386
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions/login-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 274682659
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill the login form with \"\" and \"any_password\"",
+            "match": {
+              "location": "step-definitions/login-step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135773387
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I see error message \"Epic sadface: Username is required\"",
+            "match": {
+              "location": "step-definitions/login-step.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85604325
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 545677
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;try-to-login-as-problematic-user",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Try to login as problematic user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 255178905
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions/login-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 296622104
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I fill the login form with \"problem_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions/login-step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148182951
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I see a doge pictures",
+            "match": {
+              "location": "step-definitions/login-step.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255506
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 525480
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;try-to-login-as-problematic-user",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Try to login as problematic user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 250066789
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I visit a login page",
+            "match": {
+              "location": "step-definitions/login-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 300272686
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I fill the login form with \"performance_glitch_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions/login-step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5156120130
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should see the home page",
+            "match": {
+              "location": "step-definitions/login-step.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148551865
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1109413
             }
           }
         ],
