@@ -30,3 +30,4 @@ Then(/^I see error message "([^"]*)"$/, async function(errorMessage){
 Then(/^I see a doge pictures$/, async function(){
     await loginPage.assertDogies()
 })
+

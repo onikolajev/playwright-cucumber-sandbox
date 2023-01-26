@@ -1,4 +1,3 @@
-// import {page} from 'playwright'
 const chai = require('chai')
 const expect = chai.expect
 

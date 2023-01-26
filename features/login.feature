@@ -5,7 +5,7 @@ Feature: Login action
 
     Scenario: Login with valid credentials
         Given I visit a login page
-        And I fill the login form with valid credentials
+        When I fill the login form with valid credentials
         Then I should see the home page
 
     Scenario Outline: Try to login with invalid credentials

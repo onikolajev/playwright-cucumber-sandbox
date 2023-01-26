@@ -1,5 +1,95 @@
 [
   {
+    "description": "    As a user\n    I want to add or remove items in inventory page",
+    "elements": [
+      {
+        "description": "",
+        "id": "inventory-page;try-to-add-backpack",
+        "keyword": "Scenario Outline",
+        "line": 7,
+        "name": "Try to add backpack",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 536656862
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am logged in",
+            "match": {
+              "location": "step-definitions/inventory-step.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 881941163
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I add to cart \"backpack\"",
+            "match": {
+              "location": "step-definitions/inventory-step.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34654974
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I wait for 3 seconds",
+            "match": {
+              "location": "step-definitions/login-step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3002622735
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I should see in cart badge \"1\"",
+            "match": {
+              "location": "step-definitions/inventory-step.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9538406
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1115979
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inventory-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inventory page",
+    "tags": [],
+    "uri": "features/inventory.feature"
+  },
+  {
     "description": "    As a user\n    I want to login into application",
     "elements": [
       {
@@ -14,7 +104,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 554822424
+              "duration": 285722765
             }
           },
           {
@@ -27,12 +117,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 311805462
+              "duration": 291306195
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 8,
             "name": "I fill the login form with valid credentials",
             "match": {
@@ -40,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 175631476
+              "duration": 154268174
             }
           },
           {
@@ -53,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12602904
+              "duration": 9891826
             }
           },
           {
@@ -61,7 +151,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1469030
+              "duration": 829675
             }
           }
         ],
@@ -80,7 +170,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 328701771
+              "duration": 256884979
             }
           },
           {
@@ -93,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 319891046
+              "duration": 763027883
             }
           },
           {
@@ -106,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 121404633
+              "duration": 128062246
             }
           },
           {
@@ -119,7 +209,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 107031376
+              "duration": 107055819
             }
           },
           {
@@ -127,7 +217,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 748837
+              "duration": 530088
             }
           }
         ],
@@ -146,7 +236,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 251968472
+              "duration": 251186751
             }
           },
           {
@@ -159,7 +249,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 304579900
+              "duration": 271997257
             }
           },
           {
@@ -172,7 +262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 135175600
+              "duration": 119238201
             }
           },
           {
@@ -185,7 +275,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96240882
+              "duration": 100068873
             }
           },
           {
@@ -193,7 +283,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 636296
+              "duration": 726620
             }
           }
         ],
@@ -212,7 +302,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 245238523
+              "duration": 240367140
             }
           },
           {
@@ -225,7 +315,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 284592495
+              "duration": 291811413
             }
           },
           {
@@ -238,7 +328,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 121383751
+              "duration": 133021192
             }
           },
           {
@@ -251,7 +341,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100249535
+              "duration": 110359829
             }
           },
           {
@@ -259,7 +349,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 521278
+              "duration": 833292
             }
           }
         ],
@@ -278,7 +368,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 242338739
+              "duration": 245761296
             }
           },
           {
@@ -291,7 +381,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 292572697
+              "duration": 304594988
             }
           },
           {
@@ -304,7 +394,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 132478279
+              "duration": 121677153
             }
           },
           {
@@ -317,7 +407,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 94377905
+              "duration": 89007838
             }
           },
           {
@@ -325,7 +415,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 579159
+              "duration": 477662
             }
           }
         ],
@@ -344,7 +434,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 247647386
+              "duration": 252183138
             }
           },
           {
@@ -357,7 +447,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 274682659
+              "duration": 289688096
             }
           },
           {
@@ -370,7 +460,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 135773387
+              "duration": 120135527
             }
           },
           {
@@ -383,7 +473,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 85604325
+              "duration": 98900679
             }
           },
           {
@@ -391,7 +481,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 545677
+              "duration": 437940
             }
           }
         ],
@@ -402,7 +492,7 @@
         "description": "",
         "id": "login-action;try-to-login-as-problematic-user",
         "keyword": "Scenario",
-        "line": 24,
+        "line": 23,
         "name": "Try to login as problematic user",
         "steps": [
           {
@@ -410,46 +500,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 255178905
+              "duration": 254049505
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 25,
+            "line": 24,
             "name": "I visit a login page",
             "match": {
               "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 296622104
+              "duration": 275752933
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 26,
+            "line": 25,
             "name": "I fill the login form with \"problem_user\" and \"secret_sauce\"",
             "match": {
               "location": "step-definitions/login-step.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 148182951
+              "duration": 161401359
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 26,
             "name": "I see a doge pictures",
             "match": {
               "location": "step-definitions/login-step.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 255506
+              "duration": 243833
             }
           },
           {
@@ -457,7 +547,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 525480
+              "duration": 613589
             }
           }
         ],
@@ -466,56 +556,56 @@
       },
       {
         "description": "",
-        "id": "login-action;try-to-login-as-problematic-user",
+        "id": "login-action;try-to-login-as-user-with-performance-issue",
         "keyword": "Scenario",
-        "line": 29,
-        "name": "Try to login as problematic user",
+        "line": 28,
+        "name": "Try to login as user with performance issue",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 250066789
+              "duration": 244670063
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 30,
+            "line": 29,
             "name": "I visit a login page",
             "match": {
               "location": "step-definitions/login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 300272686
+              "duration": 286874382
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 31,
+            "line": 30,
             "name": "I fill the login form with \"performance_glitch_user\" and \"secret_sauce\"",
             "match": {
               "location": "step-definitions/login-step.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 5156120130
+              "duration": 5160551455
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
+            "line": 31,
             "name": "I should see the home page",
             "match": {
               "location": "step-definitions/login-step.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 148551865
+              "duration": 145627213
             }
           },
           {
@@ -523,7 +613,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1109413
+              "duration": 788224
             }
           }
         ],
